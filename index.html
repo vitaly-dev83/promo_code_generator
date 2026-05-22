@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Промо-Генератор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎫 Генератор промокодов</h1>
+        
+        <div class="card">
+            <h2>Сгенерировать новый</h2>
+            <div class="input-group">
+                <label>Длина кода (4–20):</label>
+                <input type="number" id="codeLength" value="8" min="4" max="20">
+            </div>
+            <div class="input-group">
+                <label>Включить цифры:</label>
+                <input type="checkbox" id="includeDigits" checked>
+            </div>
+            <button id="generateBtn">Сгенерировать</button>
+            <div class="result">
+                <strong>Промокод:</strong>
+                <span id="generatedCode">----</span>
+                <button id="copyBtn" style="display:none;">📋</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Проверить промокод</h2>
+            <input type="text" id="validateInput" placeholder="Введите промокод">
+            <button id="validateBtn">Проверить</button>
+            <div id="validationResult"></div>
+        </div>
+
+        <div class="info">
+            <p>💡 Промокод имеет контрольную сумму (последний символ вычисляется из предыдущих).<br>
+            Ручное изменение последнего символа сделает код невалидным.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
