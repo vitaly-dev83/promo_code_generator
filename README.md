@@ -18,7 +18,8 @@
 
 ## 🖼️ Как это выглядит
 
-*(Скоро здесь будет скриншот)*
+<img width="644" height="929" alt="Промо-генератор и валидатор" src="https://github.com/user-attachments/assets/18e30ca3-bc41-487a-b75c-d87029c46224" />
+
 
 ---
 
